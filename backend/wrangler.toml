@@ -1,0 +1,16 @@
+name = "stocks-tracker-backend"
+main = "src/index.ts"
+compatibility_date = "2024-12-30"
+
+[vars]
+ADMIN_PIN="1234"
+JWT_SECRET="my_JWT_KEY"
+TELEGRAM_BOT_TOKEN="your_bot_token"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "stocks-db"
+database_id = "32edbbe8-82d5-431b-808c-300eb956c74f"
+
+[triggers]
+crons = ["*/15 * * * *"]

@@ -1,0 +1,5 @@
+# Local secrets for wrangler dev
+ADMIN_PIN=1234
+JWT_SECRET=super-secret-key-change-this
+TELEGRAM_BOT_TOKEN=your_bot_token
+ALPHA_VANTAGE_API_KEY=your_api_key
