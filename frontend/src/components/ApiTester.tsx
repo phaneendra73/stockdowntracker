@@ -11,7 +11,7 @@ interface ApiTesterProps {
 }
 
 export function ApiTester({ apiBase, token }: ApiTesterProps) {
-    const [symbol, setSymbol] = useState('AAPL')
+    const [symbol, setSymbol] = useState('')
     const [url, setUrl] = useState('')
     const [chatId, setChatId] = useState('')
     const [loading, setLoading] = useState<{ market?: boolean; telegram?: boolean }>({})
@@ -79,7 +79,7 @@ export function ApiTester({ apiBase, token }: ApiTesterProps) {
                             />
                         </div>
                         <div className="space-y-2">
-                            <Label>Scraping URL (Optional - e.g. Google Finance)</Label>
+                            <Label>Scraping URL</Label>
                             <Input
                                 value={url}
                                 onChange={e => setUrl(e.target.value)}

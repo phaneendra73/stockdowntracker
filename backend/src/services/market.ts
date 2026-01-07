@@ -1,5 +1,4 @@
 export async function getStockPrice(url: string): Promise<number | null> {
-  console.log(`[getStockPrice] Attempting to scrape: ${url}`);
   try {
     const response = await fetch(url, {
       headers: {
