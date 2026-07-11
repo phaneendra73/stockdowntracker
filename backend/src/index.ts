@@ -57,7 +57,6 @@ export default {
     const db = drizzle(env.DB, { schema });
 
     const activeAlerts = await db.query.alerts.findMany({
-      where: eq(schema.alerts.notified, false),
       with: {
         stock: true,
         user: true,

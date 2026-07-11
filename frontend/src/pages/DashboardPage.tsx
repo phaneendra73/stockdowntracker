@@ -69,7 +69,7 @@ export function DashboardPage({
                     <TableHeader className="bg-muted/30">
                         <TableRow className="border-border">
                             <TableHead className="text-[10px] font-black uppercase tracking-widest">Asset</TableHead>
-                            <TableHead className="text-[10px] font-black uppercase tracking-widest">Base Value</TableHead>
+                            <TableHead className="text-[10px] font-black uppercase tracking-widest">Traget Price</TableHead>
                             <TableHead className="text-[10px] font-black uppercase tracking-widest">Trigger</TableHead>
                             <TableHead className="text-[10px] font-black uppercase tracking-widest">Spot Price</TableHead>
                             <TableHead className="text-[10px] font-black uppercase tracking-widest">Condition</TableHead>
